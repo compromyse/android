@@ -15,7 +15,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y bc bison build-essential
 RUN curl -o /usr/local/bin/repo https://storage.googleapis.com/git-repo-downloads/repo
 RUN chmod a+x /usr/local/bin/repo
 
-RUN  useradd -m -s /bin/bash -u $userid -g $groupid $username
+RUN useradd -m -s /bin/bash -u $userid -g $groupid $username
 
 WORKDIR /home/$username
 USER $username
