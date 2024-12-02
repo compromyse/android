@@ -33,7 +33,7 @@
         m4
         nettools
         openssl.dev
-        # perl
+        perl
         pngcrush
         procps
         python3
@@ -55,15 +55,12 @@
         readline
 
         libgcc # crtbeginS.o
-        # iconv # ??? - i put this here and by the time i went back to remove unecessary packages i forgot why
+        iconv # ??? - i put this here and by the time i went back to remove unecessary packages i forgot why
         iconv.dev # sys/types.h
       ];
     profile = ''
-      export ALLOW_NINJA_ENV=true
       export USE_CCACHE=1
       export CCACHE_EXEC=/usr/bin/ccache
-      export ANDROID_JAVA_HOME=${pkgs.jdk11.home}
-      # Building involves a phase of unzipping large files into a temporary directory
       export TMPDIR=/tmp
       export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${pkgs.ncurses5}/lib
     '';

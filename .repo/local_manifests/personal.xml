@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="LineageOS/android_device_zuk_msm8996-common" path="device/zuk/msm8996-common" revision="lineage-20" />
-  <project name="LineageOS/android_device_zuk_z2_plus" path="device/zuk/z2_plus" revision="lineage-20" />
-  <project name="LineageOS/android_kernel_zuk_msm8996" path="kernel/zuk/msm8996" revision="lineage-20" />
+  <project name="compromyse/android_device_zuk_msm8996-common" path="device/zuk/msm8996-common" revision="lineage-21" />
+  <project name="compromyse/android_device_zuk_z2_plus" path="device/zuk/z2_plus" revision="lineage-21" />
+  <project name="compromyse/android_kernel_zuk_msm8996" path="kernel/zuk/msm8996" revision="lineage-21" />
 
   <project name="compromyse/proprietary_vendor_zuk" path="vendor/zuk" revision="lineage-21" />
 
