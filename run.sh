@@ -2,4 +2,4 @@
 
 user=compromyse
 
-docker run -it --rm -v "$(pwd):/home/$user/lineage" lineage
+docker run -it --rm -v "$(pwd)/src:/home/$user/src" lineage
