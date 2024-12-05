@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="compromyse/android_device_zuk_msm8996-common" path="device/zuk/msm8996-common" revision="lineage-21" />
-  <project name="compromyse/android_device_zuk_z2_plus" path="device/zuk/z2_plus" revision="lineage-21" />
-  <project name="compromyse/android_kernel_zuk_msm8996" path="kernel/zuk/msm8996" revision="lineage-21" />
+  <remote name="compromyse" fetch="ssh://git@github.com/compromyse/" />
 
-  <project name="compromyse/proprietary_vendor_zuk" path="vendor/zuk" revision="lineage-21" />
+  <project name="android_device_zuk_msm8996-common" path="device/zuk/msm8996-common" remote="compromyse" revision="lineage-22" />
+  <project name="android_device_zuk_z2_plus" path="device/zuk/z2_plus" remote="compromyse" revision="lineage-22" />
+  <project name="android_kernel_zuk_msm8996" path="kernel/zuk/msm8996" remote="compromyse" revision="lineage-22" />
 
-  <!-- <project name="compromyse/android_vendor_extra" path="vendor/extra" /> -->
+  <project name="proprietary_vendor_zuk" path="vendor/zuk" remote="compromyse" revision="lineage-22" />
+
+  <project name="android_vendor_extra" path="vendor/extra" revision="main" remote="compromyse" />
   <!-- <project name="MindTheGapps/vendor_gapps" path="vendor/gapps" remote="gitlab" revision="upsilon" /> -->
 </manifest>
