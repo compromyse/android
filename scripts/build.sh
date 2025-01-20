@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-podman build -t lineage .
+docker build -t lineage .

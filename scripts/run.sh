@@ -8,5 +8,5 @@ fi
 user=compromyse
 
 pushd $1
-podman run -it --rm -v "$(pwd):/home/$user/src" -v "$HOME/.ssh:/home/$user/.ssh" lineage
+docker run -it --rm -v "$(pwd):/home/$user/src" -v "$HOME/.ssh:/home/$user/.ssh" lineage
 popd
