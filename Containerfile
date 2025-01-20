@@ -6,7 +6,7 @@ ARG username=compromyse
 ARG config=vm
 ARG http_proxy
 
-RUN DEBIAN_FRONTEND="noninteractive" apt-get update
+RUN DEBIAN_FRONTEND="noninteractive" apt-get update -y
 RUN DEBIAN_FRONTEND="noninteractive" apt-get upgrade -y
 
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y apt-utils sudo ssh less
